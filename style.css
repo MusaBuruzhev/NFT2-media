@@ -1,0 +1,516 @@
+body {
+    margin: 0;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #000000;
+    }
+    25% {
+        background-color: #040808;
+    }
+    50% {
+        background-color: #0A141F;
+    }
+    75% {
+        background-color: #172C29;
+    }
+    100% {
+        background-color: #0E172B;
+    }
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.menu-container {
+    display: flex;
+    flex-grow: 1; /* Занимает все доступное пространство */
+}
+
+header a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+
+header a:hover {
+    color: #D6EF0E;
+}
+
+header div {
+    
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+header button {
+    background: #D6EF0E;
+    width: 143px;
+    height: 48px;
+    border-radius: 10px;
+    color: white;
+    transform: .5s;
+}
+
+header button:hover {
+    color: #000;
+}
+
+.burger {
+    cursor: pointer;
+    padding: 15px;
+    display: none; /* Скрыть бургер-меню по умолчанию */
+}
+
+.burger .line {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.menu {
+    display: none; /* Скрыть меню по умолчанию */
+    background-color: #131E3A; /* Цвет фона меню */
+    position: absolute;
+    top: 100px; /* Позиционирование под заголовком */
+    width: 100%;
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu ul li a,
+.menu ul li button {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.burger{
+    margin-left: 20PX;
+}
+
+@media (max-width: 750px) {
+    .b1{
+        margin-left: auto;
+    }
+    .menu-container {
+        display: none; /* Скрываем ссылки на маленьких экранах */
+    }
+    
+    .burger {
+        display: block; /* Показываем бургер-меню на маленьких экранах */
+    }
+    
+    .menu {
+        display: none; /* Скрываем меню по умолчанию */
+    }
+}
+
+
+
+article{
+    width: 100%;
+
+}
+.ArticleNew{
+    color: white;
+    
+    font-size: 30px;
+    margin-left: 5%;
+    width: 40%;
+}
+
+.PGreen{
+    color: #D6EF0E;
+}
+
+.articleIMG{
+    margin-right: 70px;
+    margin-left: auto;
+}
+
+.ArticleNew button{
+    width: 178px;
+    height: 52px;
+    border: 2px solid #D6EF0E;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    transition: .5s;
+}
+.ArticleNew button:hover{
+    background: #D6EF0E;
+    width: 180px;
+    height: 55px;
+}
+
+
+.h2K{
+    color: #D6EF0E;
+    margin-left: 50px;
+}
+.h2K:first-of-type {
+    margin-left: 0; /* Убираем отступ для первого элемента данного типа */
+}
+
+.ArticleNewP{
+    position: relative;
+    margin-top: -50px;
+    font-size: 16px;
+
+}
+.ArticleNewP p{
+    margin-left: 75px;
+}
+.ArticleNewP p:first-of-type{
+    margin-left: 0;
+}
+
+
+
+.section1{
+    width: 89%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.section1 h1{
+    font-size: 34px;
+    width: 23%;
+}
+
+
+nav{
+   
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+nav div{
+    background: #131E3A;
+    border-radius: 10px;
+    
+    
+    
+}
+
+nav div:first-of-type{
+    margin-left: 0;
+}
+
+#a1{
+    color: #D6EF0E;
+    border: 2px solid #D6EF0E;
+    width: 130px;
+    height: 49px;
+    background: none;
+    border-radius: 15px;
+    transition: .5s;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+#a1:hover{
+    background: #D6EF0E;
+    color: white;  
+}
+
+#a2{
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 25px;
+}
+#a3{
+    margin-top: -3px;
+    margin-left: 10px;
+
+}
+nav h2{
+    margin-left: 10px;
+}
+
+
+
+#a4{
+    margin-top: 150px;
+   
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#IMG{
+    margin-left: auto;
+    margin-right: 7%;
+
+
+}
+#a5{
+    
+    width: 55%;
+}
+#a5 h1{
+    max-width: 60%;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+#a5 p{
+    max-width: 60%;
+}
+#a5 div{
+    display: flex;
+    max-width: 60%;
+}
+#a5 button{
+    
+    margin-top: 20px;
+    width: 150px;
+    height: 42px;
+    border: 2px solid #D6EF0E;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    transition: .5s;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#a5 button:hover{
+    background: #D6EF0E;
+    }
+
+
+    figcaption{
+        color: white;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption h1{
+        width: 100%;
+    }
+    figcaption button{
+        margin-top: 20px;
+        width: 150px;
+    height: 42px;
+    background:  #D6EF0E;
+    border-radius: 10px;
+    margin-left: auto;  
+    margin-right: 30px;      
+    color: white;
+    transition: .5s;
+    
+    cursor: pointer;
+    }
+
+
+
+    footer{
+        color: white;
+        
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+        transition: .5s;
+    }
+
+    
+    footer a:hover{
+        
+        color: #D6EF0E;
+        
+    }
+
+
+
+
+
+
+#jagaga{
+
+    display: flex;
+}
+.imgTime{
+    margin-left: auto;
+}
+
+#ahmed{
+    position: relative; margin-top: 300px; margin-left: -100px;
+}
+
+
+    /* Медиа  */
+    @media (max-width: 1250px) {
+        header div{
+            margin-right: 50px;
+        }
+        
+        #jagaga{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            background: none;
+        }   
+         
+        
+        #imgTime{
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        
+        #imm{
+            width: 300px;
+            
+        }
+        .section1{
+            margin-left: 0;
+            
+            max-width:  1000px;
+        }
+        .section1 h1{
+            margin-left: 0;
+            width: 100%;
+            margin-left: 50px;
+        }
+        .articleIMG{
+            margin-right: 0;
+        }
+    }
+
+
+    @media (max-width: 1050px) {
+        .articleIMG{
+            display: none;
+            
+        }
+        
+        .ArticleNew{
+            width: 100%;
+        }
+
+        #IMG{
+            margin-top: 80px;
+            margin-right: 15%;
+        }
+        #IMG img{width: 200px;
+            
+        }
+        #a4{
+            margin-top: -50px;
+            width: 100%;
+
+        }
+        #ahmed{
+            margin-top: 170px;
+    margin-left: -60px;
+        }
+        #ahh{
+            margin-top: 80px;
+        }
+
+        #a5{
+            margin-left: 40px;
+        }
+        #fpp{
+            display: none;
+        }
+    }
+
+    @media (max-width: 900px) {
+        figcaption button{
+            margin-right: 5px;
+        }
+        #imgTime{
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+        #imm{
+            width: 250px;
+            
+        }
+        #jagaga{
+            
+            margin-left: 4%;
+            
+        } 
+    }
+
+
+    @media (max-width: 750px) {
+        header div{
+            margin-right: 20px;
+            
+        }
+        #jagaga{
+            display: block; 
+            align-items: center;
+            height: 1500px;
+            background: #131E3A;
+            
+        }   
+        #jagaga img{
+            margin-top: 20px;
+        }
+        #maga{
+            
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        footer{
+            display: none;
+        }
+        #IMG img {
+             width: 156px;
+        }
+        #a5 {
+            width: 65%;
+        }
+
+        
+        
+    }
+
+    @media (max-width: 600px) {
+        footer{
+            display: none;
+        }
+        .air{
+            width: 424px;
+        }
+        #ahh{
+            margin-left: -50px;
+        }
+        #ahmed {
+            margin-top: 170px;
+            margin-left: -100px;
+        }
+    }
